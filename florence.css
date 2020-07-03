@@ -18,6 +18,65 @@
   background-size: cover;
 }
 
+.card__icons {
+  position: relative;
+  top: 30px;
+  left: 40px;
+}
+
+#info {
+  color: white;
+  transition: all ease-in-out 0.3s;
+  zoom: 1.3;
+}
+
+#info:hover {
+  color: black;
+  cursor: pointer;
+}
+
+#heart {
+  margin-left: 20px;
+  zoom: 1.3;
+  color: white;
+}
+
+#heart:hover {
+  cursor: pointer;
+  color: red;
+  animation: bounce 1s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes bounce {
+  25% {transform: scale(1.2);}
+  50% {transform: scale(1);}
+  75% {transform: scale(0.8);}
+  100% {transform: scale(1);}
+}
+
+.redUp {
+  color: red;
+}
+
+.card__cityIntro {
+  font-family: 'Josefin Sans', sans-serif;
+  color: white;
+  font-size: 0.9rem;
+  width: 260px;
+  opacity: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  font-size: 1rem;
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  border-radius: 5px;
+  padding: 8px;
+}
+
+.showUp {
+  opacity: 1;
+}
+
+
 .country {
   background-color: white;
   width: 35px;
@@ -27,8 +86,8 @@
   text-align: center;
   border-radius: 4px;
   position: relative;
-  left: 420px;
-  top: 20px;
+  left: 415px;
+  bottom: 105px;
 }
 
 .country:hover {
@@ -38,7 +97,7 @@
 
 .contentWrapper {
   border-left: 3px solid rgb(98, 241, 194);
-  margin-top: 180px;
+  margin-top: 30px;
   margin-left: 5px;
   padding-left: 30px;
 }

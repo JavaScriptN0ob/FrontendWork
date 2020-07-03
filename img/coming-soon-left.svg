@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="244.478" height="55" viewBox="0 0 244.478 55">
+  <defs>
+    <clipPath id="clip-path">
+      <rect width="244.478" height="55" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="blue-left-to-right" transform="translate(0 0)" clip-path="url(#clip-path)">
+    <g id="circle-string-blue" transform="translate(0 0)">
+      <path id="Line" d="M0,55S31.536,11.2,124.151,24,244.478,0,244.478,0" fill="none" stroke="rgba(0,0,0,0.25)" stroke-linecap="square" stroke-miterlimit="10" stroke-width="1" stroke-dasharray="8"/>
+      <ellipse id="Oval" cx="12" cy="11.5" rx="12" ry="11.5" transform="translate(126 19)" fill="#bcebf0"/>
+      <g id="Oval-2" data-name="Oval" transform="translate(121 14)" fill="none" stroke="rgba(0,0,0,0.25)" stroke-miterlimit="10" stroke-width="1">
+        <ellipse cx="12" cy="11.5" rx="12" ry="11.5" stroke="none"/>
+        <ellipse cx="12" cy="11.5" rx="11.5" ry="11" fill="none"/>
+      </g>
+    </g>
+  </g>
+</svg>
