@@ -1,0 +1,285 @@
+header {
+  display: flex;
+  justify-content: center;
+}
+
+.title {
+  margin: 40px auto 20px auto;
+}
+
+.title::before {
+  content: '';
+  background-image: url(https://jiangren.com.au/images/icons/coming-soon-left.svg);
+  width: 240px;
+  height: 55px;
+  position: absolute;
+  left: 0px;
+  top: 10px;
+}
+
+.title::after {
+  content:'';
+  background-image: url(https://jiangren.com.au/images/icons/coming-soon-right.svg);
+  width: 240px;
+  height: 55px;
+  position: absolute;
+  right: 0px;
+  top: 10px;
+  background-repeat: no-repeat;
+}
+
+.title-en {
+  text-align: center;
+  font-weight: 400;
+  font-size: 2rem;
+  color: rgba(0, 0, 0, 0.3);
+  margin-bottom: -45px;
+}
+
+.title-ch {
+  text-align: center;
+  font-weight: 500;
+}
+
+.title__description {
+  text-align: center;
+  font-size: 0.8rem;
+  letter-spacing: 2px;
+  font-weight: 300;
+  margin-bottom: 20px;
+}
+
+main {
+  margin-top: 20px;
+  display: flex;
+  /* flex-direction: row;
+  flex-wrap: wrap; */
+  flex-flow: row wrap;
+  /* flex-flow === flex-direction + flex-wrap */
+  justify-content: center;
+}
+
+.card {
+  border-left: solid 4px #ff7070;
+  border-radius: 5px;
+  box-shadow:1px 1px 5px 1px lightgray;
+  /* padding: 15px 20px 20px 15px; */
+  width: 45%;
+  position: relative;
+  max-width: 480px;
+  min-width: 400px;
+  margin: 10px 12px 10px 10px;
+}
+
+.cardWrapper {
+  margin: 15px 20px 20px 15px;
+}
+
+.card:hover {
+  transform: scale(1.02);
+  cursor: pointer;
+}
+
+.card__title {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.card__title-left {
+  display: flex;
+  flex-direction: row;
+}
+
+.redBlock-left {
+  width: 10px;
+  height: 10px;
+  background-color: #ff7070;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.redBlock-mid {
+  width: 10px;
+  height: 10px;
+  background-color: #ff7070;
+  margin-left: 2px;
+}
+
+.redBlock-mid--empty {
+  width: 10px;
+  height: 10px;
+  background-color: #ffd7db;
+  margin-left: 2px;
+}
+
+.redBlock-right {
+  width: 10px;
+  height: 10px;
+  background-color: #ffd7db;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  margin-left: 2px;
+}
+
+.redBlock-word {
+  color: #ff7070;
+  margin-left: 15px;
+  font-size: 0.7rem;
+}
+
+.card__title-right {
+  position: absolute;
+  font-size: 0.8rem;
+  left: 80%;
+  overflow: hidden;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.card__content {
+  /* border: 1px solid black; */
+  margin: 5px 0;
+}
+
+.card__content-title {
+  /* border: 1px solid yellow; */
+  margin-top: 5px;
+  color: #ff7070;
+  letter-spacing: 2px;
+  font-size: 1rem;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+.card__content-introduction {
+  /* border: 1px solid red; */
+  margin-top: 5px;
+  font-size: 0.7rem;
+  color: rgba(0, 0, 0, 0.5);
+  margin-bottom: 15px;
+}
+
+.card__content-highlight {
+  /* border: 1px solid green; */
+  margin-top: 15px;
+  font-size: 0.8rem;
+  margin-bottom: 0;
+}
+
+.card__content-hidden {
+  /* display: none; */
+  display: flex;
+}
+
+.card__content-hidden--left {
+  /* border: 1px solid black; */
+  width: 20px;
+  background-color: #ff7070;
+  position: relative;
+  height: 151px;
+  margin-left: 1px;
+  padding: 6px 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.goldenLector {
+  color: white;
+  word-wrap: break-word;
+}
+
+.card__content-hidden--right {
+  display: flex;
+  padding: 10px;
+  /* border: 1px solid yellow; */
+  width: 90%;
+  flex-flow: row wrap;
+}
+
+.tutorWrapper {
+  /* border: 1px solid red; */
+  display: flex;
+  max-height: 45%;
+  max-width: 45%;
+  margin-left: 10px;
+}
+
+.tutor-left {
+  padding: 8px;
+  padding-left: 3px;
+}
+
+.avatar {
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  border: 1px solid transparent;
+  background-color: #ff7070;
+}
+
+.tutor-right {
+  width: 130px;
+  height: 35px;
+}
+
+.tutor__title {
+  font-size: 0.75rem;
+}
+
+.tutor__description {
+  font-size: 0.8rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.hidden {
+  display: none;
+}
+
+.author {
+  margin-top: 40px;
+  padding: 0px 100px;
+}
+
+.authorName, .authorEmail {
+  color: #ff7070;
+  margin-left: 20px;
+}
+
+.authorName:hover::after {
+  content: "if your mouse stop here mean you like my project";
+  margin-left: 20px;
+  color: pink;
+  border-top-color: lightgreen;
+  border-right-color: red;
+  border-bottom-color: burlywood;
+  border-left-color: purple;
+  border-top-width: 2px;
+  border-top-style: solid;
+  border-right-width: 2px;
+  border-right-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-style: solid;
+  border-left-width: 2px;
+  border-left-style: solid;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+marquee > p > a {
+  margin-left: 20px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  border: 1px solid transparent;
+  background-color: #007cc2;
+  padding: 5px 15px;
+  border-radius: 20px;
+}
+
+a:hover {
+  background-color: #005485;
+}
