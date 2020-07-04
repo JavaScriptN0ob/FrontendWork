@@ -156,6 +156,7 @@ main {
   font-size: 0.7rem;
   color: rgba(0, 0, 0, 0.5);
   margin-bottom: 15px;
+  height: 48px;
 }
 
 .card__content-highlight {
@@ -163,11 +164,14 @@ main {
   margin-top: 15px;
   font-size: 0.8rem;
   margin-bottom: 0;
+  height: 34px;
 }
 
 .card__content-hidden {
   /* display: none; */
   display: flex;
+  height: 179px;
+  width: 484px;
 }
 
 .card__content-hidden--left {
@@ -175,7 +179,7 @@ main {
   width: 20px;
   background-color: #ff7070;
   position: relative;
-  height: 151px;
+  height: 167px;
   margin-left: 1px;
   padding: 6px 4px;
   display: flex;
